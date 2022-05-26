@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::Formulario de contacto::</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Formulario de contacto</h2>
+    </header>
+
+    <section class="content__form">
+
+        <form method="post" id="formcontact">
+
+            <input type="hidden" name="action" id="action" value="setContact">
+
+            <span>Nombre completo:</span>
+            <input type="text" name="name" id="name" pattern="[A-Za-z]+" required><br>
+
+            <span>País:</span>
+            <select name="pais" id="pais">
+                <option value="">SELECCIONA:</option>
+
+            </select><br>
+
+            <span>Celular:</span>
+            <input type="number" name="phone" id="phone" required><br>
+
+            <span>Correo electrónico:</span>
+            <input type="email" name="email" id="email" required><br>
+
+            <input type="button" value="Enviar" id="save">
+
+        </form>
+
+    </section>
+
+    <div class="msg">
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="BACKEND/app.js"></script>
+
+</body>
+
+</html>
